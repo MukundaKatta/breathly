@@ -4,19 +4,34 @@
 
 Guided breathwork for anxiety, sleep, and focus. No subscription paywall on the first week.
 
-## What you get
+## Stack
 
-- **Sessions that work in a cab** — Three-minute panic-break. Six-minute morning prime. Ten-minute evening wind-down.
-- **HRV-backed** — We read your Apple Watch HRV before and after. You see the actual effect, not a vibe.
-- **Voices you'll want to hear** — Calm, different, real humans. No meditation-appointment energy.
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript (strict)
+- **Styling:** Tailwind CSS v4
+- **Package manager:** pnpm
 
-## Category
+## Run
 
-Health. Part of a 50-product exploration of high-demand consumer and SMB markets.
+```bash
+pnpm install
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Deploy
+
+Push to a Vercel project linked to this repo. Zero config — the Next.js preset handles everything.
+
+## Routes
+
+| Path | Description |
+| --- | --- |
+| `/` | Landing page with waitlist form |
+| `/try` | Interactive 4-7-8 guided breath cycle |
+| `/api/waitlist` | POST proxy to waitlist API |
 
 ## Status
 
-Landing page live with interactive demo and functional waitlist.
-
-- **Live:** https://mukundakatta.github.io/breathly/
-- **Waitlist API:** https://waitlist-api-sigma.vercel.app/api/waitlist
+v0 skeleton — landing page ported, interactive breathing exercise, waitlist API wired up.
